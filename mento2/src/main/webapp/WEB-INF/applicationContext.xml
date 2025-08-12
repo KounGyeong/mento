@@ -12,18 +12,12 @@
 
 	<!--DB, 서비스, DAO 관리 : applicationContext,   웹요청 URL, Controller , JSP 연결 : dispatcher-servlet -->
 	
-    <!-- DB 연결 
+    <!-- DB 연결 -->
     <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
         <property name="driverClassName" value="org.mariadb.jdbc.Driver"/>
         <property name="url" value="jdbc:mariadb://gwp2025.cafe24.com:3306/gwp2025?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;serverTimezone=Asia/Seoul"/>
         <property name="username" value="gwp2025"/>
         <property name="password" value="gkdldyd321!@!"/>
-    </bean>-->
-    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
-        <property name="driverClassName" value="org.mariadb.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/mydb?allowPublicKeyRetrieval=true&amp;useSSL=false&amp;serverTimezone=Asia/Seoul"/>
-        <property name="username" value="root"/>
-        <property name="password" value="sampletest12345"/>
     </bean>
 
     <!-- JdbcTemplate -->
